@@ -6,7 +6,7 @@ return {
     'nvim-tree/nvim-web-devicons', -- optional, for file icons
   },
   keys = {
-    { "<Leader><F5>", ":NvimTreeToggle<CR>", desc = "Toggle Nvim Tree" },
+    { "5", ":NvimTreeToggle<CR>", desc = "Toggle Nvim Tree" },
   },
   config = function()
     require("nvim-tree").setup {
@@ -20,5 +20,4 @@ return {
       callback = function() vim.cmd("NvimTreeClose") end,
     })
   end
-  -- tag = 'nightly' -- optional, updated every week. (see issue #1193)
 }
