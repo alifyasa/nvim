@@ -1,7 +1,7 @@
 vim.cmd([[
 augroup AutoFormat
     autocmd!
-    autocmd BufWritePre * lua vim.lsp.buf.format()
+    autocmd BufWritePre * :Prettier " lua vim.lsp.buf.format()
 augroup END
 ]])
 
